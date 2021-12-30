@@ -4,13 +4,15 @@ import { useState } from 'react';
 import StylesPractice from './components/StylesPractice'
 import Third from './components/Third';
 import Login from './components/Login';
+import Register from './components/Register';
 
 export default function App() {
   return (
     <>
       {/* <StylesPractice /> */}
       {/* <Third /> */}
-      <Login />
+      {/* <Login /> */}
+      <Register />
     </>
   );
 }

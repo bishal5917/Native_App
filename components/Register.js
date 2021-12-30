@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native'
-import { Ionicons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 
-export default function Login() {
+export default function Register() {
     const [show, setShow] = useState(false)
     const onPressLogin = () => {
         console.log("Submitted")
@@ -13,10 +13,11 @@ export default function Login() {
     }
     return (
         <View style={styles.container}>
-            <Ionicons name="person-circle-sharp" size={94} color="white" />
-            <Text style={styles.login}>Login</Text>
+            <AntDesign name="pluscircleo" size={94} color="purple" />
+            <Text style={styles.login}>Register</Text>
             <View style={styles.inputCont}>
                 <TextInput style={styles.text} placeholder="Username"></TextInput>
+                <TextInput style={styles.text} placeholder="Email"></TextInput>
                 <TextInput textContentType='password'
                     style={styles.text} placeholder="Password"></TextInput>
                 <FontAwesome onPress={onPass} style={styles.eyeIcons}
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     eyeIcons: {
         position: "absolute",
         left: 280,
-        top: 85
+        top: 145
     },
     inputCont: {
         position: "relative",
