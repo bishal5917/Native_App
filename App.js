@@ -3,12 +3,14 @@ import { StyleSheet, Text, View, Image, Button, Alert } from 'react-native';
 import { useState } from 'react';
 import StylesPractice from './components/StylesPractice'
 import Third from './components/Third';
+import Login from './components/Login';
 
 export default function App() {
   return (
     <>
       {/* <StylesPractice /> */}
-      <Third />
+      {/* <Third /> */}
+      <Login />
     </>
   );
 }
